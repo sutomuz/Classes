@@ -1,15 +1,15 @@
 from run_bash_cmd_function import run_bash_cmd
 
 class Menu:
-    # Constructs a menu with no options
+    # constructs frame of menu
     def __init__(self):
         self._options = []
 
-    # Adds an option to the end of this menu
+    # adds an option to the end
     def addOption(self, option):
         self._options.append(option)
 
-    # Displays the menu and returns valid user input
+    # displays the menu and returns users input
     def getInput(self):
         while True:
             print()
@@ -29,7 +29,7 @@ class Menu:
 
             print("Invalid option. Try again.\n")
 
-    # Runs the menu until user selects Quit
+    # runs the menu until user quits
     def run(self):
         while True:
             choice = self.getInput()
